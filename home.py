@@ -28,7 +28,7 @@ def homeui():
             height = dpg.get_viewport_height()
 
             dpg.add_button(label="Host Look Up", tag="hlu_button_home", pos=(0, 0), width=190, height=40, callback=hostlookupgui)
-            dpg.add_button(label="Port Scanner", tag="ps_button_home", pos=(0, 50), width=190, height=40, callback=portscanner)
+            dpg.add_button(label="IP Scanner", tag="ps_button_home", pos=(0, 50), width=190, height=40, callback=portscanner)
             dpg.add_button(label="Web Subdirectory Finder", tag="sdf_button_home", pos=(0, 100), width=190, height=40, callback=webdirscanner)
             dpg.add_button(label="Exit", tag="exit_button", pos=(width - 120, 10), width=100, height=30, callback=lambda: dpg.stop_dearpygui())
 

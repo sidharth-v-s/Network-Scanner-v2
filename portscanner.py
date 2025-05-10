@@ -64,7 +64,7 @@ def portscanner():
         dpg.delete_item("main_window")
 
     with dpg.window(tag="main_window", label="Port Scanner", pos=(0, 0), no_title_bar=True, no_resize=True, no_move=True):
-        dpg.add_text("Port Scanner", tag="ps", color=(255, 255, 255, 255))
+        dpg.add_text("IP Scanner", tag="ps", color=(255, 255, 255, 255))
         dpg.add_separator(tag="separator")
         
         dpg.add_text("Enter The IP Address Here:", tag="ip_text", color=(255, 255, 255, 255))
@@ -108,7 +108,7 @@ def portscanner():
 
 if __name__ == "__main__":
     dpg.create_context()
-    dpg.create_viewport(title='Port Scanner', width=800, height=600)
+    dpg.create_viewport(title='IP Scanner', width=800, height=600)
     dpg.setup_dearpygui()
 
     # Import here to avoid circular imports
