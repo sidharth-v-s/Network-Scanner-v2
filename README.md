@@ -26,7 +26,9 @@ A comprehensive GUI-based cybersecurity toolkit built with Python and DearPyGui,
 ## Screenshots
 
 ![Host Lookup Tool](https://raw.githubusercontent.com/sidharth-v-s//Network-Scanner-v2/main/screenshots/host_lookup.png)
+
 ![Port Scanner](https://raw.githubusercontent.com/sidharth-v-s//Network-Scanner-v2/main/screenshots/port_scanner.png)
+
 ![Web Directory Scanner](https://raw.githubusercontent.com/sidharth-v-s//Network-Scanner-v2/main/screenshots/web_scanner.png)
 
 ## Requirements
