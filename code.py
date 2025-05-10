@@ -60,7 +60,7 @@ def find_subdirectories(url, wordlist_file, callback=None, stopInstance=None):
             elif 300 <= status_code < 400:
                 found_count += 1
                 redirect_url = response.headers.get('Location', 'Unknown')
-                results.append(f"Found: {full_url} [Status: {status_code} Redirect → {redirect_url}]")
+                results.append(f"Found: {full_url}     [Status: {status_code}]     [Redirect to {redirect_url}]")
                 if callback and found_count % 5 == 0:
                     callback("\n".join(results))
             # Other interesting status codes
@@ -72,7 +72,7 @@ def find_subdirectories(url, wordlist_file, callback=None, stopInstance=None):
                     404: "Not Found",
                     500: "Server Error"
                 }.get(status_code, "")
-                results.append(f"Found: {full_url} [Status: {status_code} {status_text}]")
+                results.append(f"Found: {full_url}     [Status: {status_code}]     [{status_text}]")
                 if callback and found_count % 5 == 0:
                     callback("\n".join(results))
         except requests.RequestException as e:

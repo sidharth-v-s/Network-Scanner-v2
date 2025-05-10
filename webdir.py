@@ -24,7 +24,7 @@ def resize():
     dpg.set_item_pos("browse_button_ws", [(width / 2) + 200, (height / 2) - 80])
     dpg.set_item_pos("scan_button_ws", [(width / 2) - 10, (height / 2) - 30])
     dpg.set_item_pos("back_button_ws", [width - 120, 10])
-    dpg.set_item_pos("result_text", [(width / 2) - 390, (height / 2) + 50])
+    dpg.set_item_pos("result_text", [(width / 2) - 600, (height / 2) + 50])
 
 def return_to_home(sender,app_data,user_data):
     user_data.scan = False
@@ -91,7 +91,7 @@ def webdirscanner():
         dpg.add_button(label="Scan", tag="scan_button_ws", pos=(0, 0), width=100, height=30, callback=run_scan,user_data=stop)
         dpg.add_button(label="Browse", tag="browse_button_ws", pos=(0, 0), width=100, height=30, callback=browse_wordlist)
         dpg.add_button(label="Back", tag="back_button_ws", pos=(0, 0), width=100, height=30, callback=return_to_home,user_data=stop)
-        dpg.add_input_text(tag="result_text", multiline=True, readonly=True, default_value="", width=700, height=200)
+        dpg.add_input_text(tag="result_text", multiline=True, readonly=True, default_value="", width=1200, height=300)
 
         # Create themes
         create_themes()
